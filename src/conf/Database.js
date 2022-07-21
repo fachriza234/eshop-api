@@ -1,6 +1,7 @@
 require('dotenv').config();
 const mysql = require('mysql');
-class Database {
+
+class database {
 
     constructor() {
       this.connection = mysql.createPool({
@@ -23,6 +24,8 @@ class Database {
           });
         });
       }
-    }
+  }
+
   
-    module.exports = Database
+
+  module.exports = database;
